@@ -103,13 +103,13 @@
                 resetButton = document.createElement("button");
                 resetButton.textContent = "Start new Game";
                 document.body.append(resetButton);
-                resetButton.addEventListenr("click", resetGame);
+                resetButton.addEventListener("click", resetGame);
             }
 
             function resetGame() {
                 guessCount = 1; 
 
-                const resetParas = document.querySelectorAll("resultParas p");
+                const resetParas = document.querySelectorAll(".resultParas p");
                 for (const resetPara of resetParas){
                     resetPara.textContent = "";
                 }
