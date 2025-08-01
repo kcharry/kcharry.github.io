@@ -25,6 +25,28 @@
                 <h2>Welcome to my super cool website!</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate iusto dolores dolorem nam provident nostrum veniam officia totam ducimus accusantium.</p>
             </div>
+
+            <div>
+                <label for="numField">Enter your debit card number: </label>
+                <input type="number" required class="numField">
+                <input type="submit" value="Submit" class="numSubmit">
+
+                <p class="scamMessage"></p>
+            </div>
+
+            <script>
+                const numSubmit = document.querySelector(".numSubmit");
+                const numField = document.querySelector(".numField");
+                const scamMessage = document.querySelector(".scamMessage");
+
+                function scam(){
+                    numField.value = "";
+                    scamMessage.textContent = "!!!YOU GOT SCAMMED!!!";
+                }
+
+                numSubmit.addEventListener("click", scam);
+            </script>
+
             <aside>
 
             </aside>
