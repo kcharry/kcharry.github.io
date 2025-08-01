@@ -72,9 +72,9 @@ nav a {
   color: #0e2a4a;
 }
 
-/* main {
-  display: flex;
-} */
+main {
+  text-align: center;
+}
 
 .scam {
   text-align: center;
