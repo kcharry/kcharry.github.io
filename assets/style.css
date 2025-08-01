@@ -109,9 +109,9 @@ nav a, nav span {
 
 /* || main layout */
 
-main {
+/* main {
   display: flex;
-}
+} */
 
 article, section {
   flex: 4;
